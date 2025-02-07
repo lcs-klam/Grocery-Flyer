@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "13078-New-England-Clam-Chowder-DDMFS-3X4-0560-e9b8d6db885546538990735f2d4d2199.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
