@@ -16,16 +16,6 @@
 			path = "Grocery Flyer";
 			sourceTree = "<group>";
 		};
-		7C11B64C2D53B3CC0003FBE8 /* Preview Content */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7C11B6502D53B3E10003FBE8 /* Views */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				7C11B6332D53B0D20003FBE8 /* Grocery Flyer */,
-				7C11B6502D53B3E10003FBE8 /* Views */,
-				7C11B64C2D53B3CC0003FBE8 /* Preview Content */,
 				7C11B6322D53B0D20003FBE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,8 +62,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7C11B6332D53B0D20003FBE8 /* Grocery Flyer */,
-				7C11B64C2D53B3CC0003FBE8 /* Preview Content */,
-				7C11B6502D53B3E10003FBE8 /* Views */,
 			);
 			name = "Grocery Flyer";
 			packageProductDependencies = (
