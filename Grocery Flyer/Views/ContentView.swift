@@ -9,16 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(thisWeeksFlyer.departments) {
+                currentDepartment in NavigationLink {
+                    NavigationView(departmentToShow: currentDepartment)
+                } label: {
+                    Text(currentDepartment.name)
+                }
+            }
+            .navigationTitle("This Week's Flyer")
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
-}
+    
+    
+    #Preview {
+        ContentView()
+    }
