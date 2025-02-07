@@ -19,20 +19,20 @@ struct NavigationView: View {
                 Text("\(currentItem.price) per \(currentItem.quantity) \(currentItem.measurement)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
-
+                
                 Image(currentItem.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 100)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                            }
-                    
-                        }
-                        .navigationTitle(departmentToShow.name)
-                    }
-                }
-                #Preview {
-                    NavigationView(departmentToShow: thisWeeksFlyer.departments[1])
-                }
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
+            .padding(.vertical, 5)
+        }
+        .navigationTitle(departmentToShow.name)
+    }
+}
+#Preview {
+    NavigationView(departmentToShow: thisWeeksFlyer.departments[1])
+}
 
 
