@@ -20,8 +20,8 @@ struct ContentView: View {
             .navigationTitle("This Week's Flyer")
         }
     }
-    
-    
-    #Preview {
-        ContentView()
-    }
+}
+
+#Preview {
+    ContentView()
+}
