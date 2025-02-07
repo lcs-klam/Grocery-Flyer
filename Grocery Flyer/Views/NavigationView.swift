@@ -23,10 +23,10 @@ struct NavigationView: View {
                 Image(currentItem.image)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 100)
+                    .frame(height: 75)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
-            .padding(.vertical, 5)
+            .padding(.vertical, 10)
         }
         .navigationTitle(departmentToShow.name)
     }
