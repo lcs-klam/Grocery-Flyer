@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct NavigationView: View {
+struct DetailedView: View {
     let departmentToShow: Department
+    
     
     var body: some View {
         List(departmentToShow.items) { currentItem in
@@ -20,19 +21,26 @@ struct NavigationView: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 
-                Image(currentItem.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 75)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                HStack {
+                    Spacer()
+                    Image(currentItem.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 100)
+                    Spacer()
+                }
+                    
             }
-            .padding(.vertical, 10)
+            .padding(20)
+            .border(.black, width: 6)
+            .clipShape(RoundedRectangle(cornerRadius:10))
+    
         }
         .navigationTitle(departmentToShow.name)
     }
 }
 #Preview {
-    NavigationView(departmentToShow: thisWeeksFlyer.departments[1])
+    DetailedView(departmentToShow: thisWeeksFlyer.departments[1])
 }
 
 
